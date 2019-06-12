@@ -7,4 +7,4 @@
 3. [插入排序](./basic/sort/Insertion.java)
 4. [希尔排序](./basic/sort/Shell.java)
 5. [归并排序](./basic/sort/Merge.java)
-
+6. [快速排序](./basic/sort/Quick.java)
