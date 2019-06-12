@@ -9,9 +9,7 @@ public class Insertion implements Sort {
             for (int j = i; j > 0; j--) {
                 // 如果j的前一个比j小,就将它插到前面.
                 if (a[j - 1] > a[j]) {
-                    int temp = a[j];
-                    a[j] = a[j - 1];
-                    a[j - 1] = temp;
+                    exch(a, j, j - 1);
                 }
             }
         }

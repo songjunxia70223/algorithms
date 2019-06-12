@@ -9,9 +9,7 @@ public class Bubble implements Sort {
             for (int j = 0; j < a.length - 1 - i; j++) {
                 // 如果正排序的数字大于在它后面的数字,就交换两者顺序
                 if (a[j] > a[j + 1]) {
-                    int temp = a[j];
-                    a[j] = a[j + 1];
-                    a[j + 1] = temp;
+                    exch(a, j, j + 1);
                 }
             }
         }

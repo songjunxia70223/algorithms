@@ -14,9 +14,7 @@ public class Shell implements Sort {
             for (int i = h; i < N; i++) {
                 for (int j = i; j >= h; j -= h) {
                     if (a[j] < a[j - h]) {
-                        int temp = a[j];
-                        a[j] = a[j - h];
-                        a[j - h] = temp;
+                        exch(a, j, j - h);
                     }
                 }
             }

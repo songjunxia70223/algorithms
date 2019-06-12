@@ -19,9 +19,7 @@ public class Selection implements Sort {
             // 如果min发生了变化,表明实际i并不是最小的数字
             // 就将i和实际最小数字所在位置进行交换
             if (min != i) {
-                int temp = a[i];
-                a[i] = a[min];
-                a[min] = temp;
+                exch(a, min, i);
             }
         }
     }
